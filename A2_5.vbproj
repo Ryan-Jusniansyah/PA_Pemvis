@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69915FF6-2A2E-4535-90BF-28F5CC9E4D8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>_A2_5.My.MyApplication</StartupObject>
+    <RootNamespace>_A2_5</RootNamespace>
+    <AssemblyName>A2_5</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>A2_5.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>A2_5.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\..\..\..\APK\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v2\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="checkout.Designer.vb">
+      <DependentUpon>checkout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Keranjang.Designer.vb">
+      <DependentUpon>Edit Keranjang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Keranjang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Login.Designer.vb">
+      <DependentUpon>Form Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Menu Utama.Designer.vb">
+      <DependentUpon>Form Menu Utama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Menu Utama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keranjang.Designer.vb">
+      <DependentUpon>Keranjang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Keranjang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanPo.Designer.vb">
+      <DependentUpon>LaporanPo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanPo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdmin.Designer.vb">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUser.Designer.vb">
+      <DependentUpon>MenuUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="registrasi.Designer.vb">
+      <DependentUpon>registrasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registrasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Keranjang.resx">
+      <DependentUpon>Edit Keranjang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Login.resx">
+      <DependentUpon>Form Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Menu Utama.resx">
+      <DependentUpon>Form Menu Utama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keranjang.resx">
+      <DependentUpon>Keranjang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanPo.resx">
+      <DependentUpon>LaporanPo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUser.resx">
+      <DependentUpon>MenuUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrasi.resx">
+      <DependentUpon>registrasi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desain tanpa judul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-keranjang-belanja-png-58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logosepatubaru.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
